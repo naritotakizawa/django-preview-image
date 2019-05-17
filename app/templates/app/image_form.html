@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <p><a href="{% url 'app:image_list' %}">一覧へ</a></p>
+    <form action="" method="POST" enctype="multipart/form-data">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit">送信</button>
+        {{ form.media }}
+    </form>
+{% endblock %}

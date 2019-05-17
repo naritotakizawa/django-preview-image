@@ -1,0 +1,12 @@
+media/
+.idea/
+db.sqlite3
+
+*.pyc
+*.pyo
+.eggs
+*.egg-info
+.cache
+.coverage
+.tox
+__pycache__

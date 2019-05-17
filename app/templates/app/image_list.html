@@ -1,0 +1,9 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <p><a href="{% url 'app:image_add' %}">アップロード</a></p>
+    <h1>画像リスト</h1>
+    {% for image in image_list %}
+        <p><a href="{% url 'app:image_update' image.pk %}">{{ image.file.name }}</a></p>
+    {% endfor %}
+{% endblock %}
