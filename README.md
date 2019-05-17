@@ -6,7 +6,7 @@
 動かし方
 ```bash
 git clone https://github.com/naritotakizawa/django-preview-image
-cd django-uploadable-textarea
+cd django-preview-image
 pip install django pillow
 python manage.py migrate
 python manage.py createsuperuser
